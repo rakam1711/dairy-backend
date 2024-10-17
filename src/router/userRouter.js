@@ -31,16 +31,10 @@ userroutes.post("/sendotp", loginUser);
 userroutes.post("/verifyotp", verifyOTP);
 userroutes.post("/register", register);
 
-userroutes.post("/followUnfollow", authenticateUser, follow);
-userroutes.post("/likeUnlike", authenticateUser, like);
-
 userroutes.post("/addaddress", authenticateUser, addAddress);
 userroutes.post("/updateaddress", authenticateUser, updateAddress);
 userroutes.post("/deleteaddress", authenticateUser, deleteAddress);
 userroutes.post("/listaddress", authenticateUser, listAddress);
-userroutes.post("/popularshophome", popularShopHome);
-userroutes.post("/shopbyCategoryid", authenticateUser, shopbyCategoryid);
-userroutes.post("/search", search);
 
 userroutes.post("/listbanner", listBanner);
 
@@ -50,11 +44,6 @@ userroutes.post("/deletecartItems", authenticateUser, deleteCartItems);
 userroutes.post("/updatecartItems", authenticateUser, updateCartItems);
 userroutes.post("/orderproducts", authenticateUser, orderproducts);
 userroutes.post("/getMyOrder", authenticateUser, getMyOrder);
-
-userroutes.get("/listallshop", listAllShop);
-userroutes.post("/shopbyserviceid", authenticateUser, shopByServiceId);
-userroutes.post("/shopbyshopid", authenticateUser, shopByShopId);
-userroutes.post("/shoptagbycategoryid", listshopTagByCategoryId);
 
 userroutes.post("/listproductbyshopid", listProductsByShopId);
 userroutes.post("/productbyproductid", productByProductId);
